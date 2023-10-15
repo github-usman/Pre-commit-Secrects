@@ -12,5 +12,11 @@
   "devDependencies": {
     "detect-secrets": "^1.0.6",
     "husky": "^8.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx detect-secrets scan",
+      "pre-push": "npm test"
+    }
   }
 }
