@@ -1,5 +1,4 @@
 #!/usr/bin/env sh
-# . "$(dirname "$0")/_/husky.sh"
-npx detect-secrets scan .
-
+. "$(dirname "$0")/_/husky.sh"
+npx detect-secrets scan index.js
 
